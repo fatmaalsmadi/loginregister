@@ -23,12 +23,23 @@
 							<img src="img/user.svg">
 						</div>
 						<div class="input">
-							<input placeholder="Password" type="password" required>
+							<!-- <input placeholder="Password" type="password"  -->
+							
+							<input type="password" id="psw "  placeholder="Enter Password" name="psw"
+          
+							pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+							
+							
+							
+							
 							<img src="img/pass.svg">
 						</div>
 						<label class="checkbox">
 							<input type="checkbox">
-							<span>Remember me</span>
+							<span>Remember m  <input type="txt" id="email" placeholder="Enter email" name="ema"           onkeydown = "validation()"
+          
+          pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+          required></span>
 						</label>
 					</div>
 					<button>Login</button>
@@ -36,7 +47,12 @@
 				<form>
 					<div class="inputs">
 						<div class="input">
-							<input placeholder="Email" type="text" required>
+							<input type="txt" id="email" placeholder="Enter email" name="ema"           onkeydown = "validation()"
+          
+							pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+							required>
+							
+						
 							<img src="img/mail.svg">
 						</div>
 						<div class="input">
@@ -44,8 +60,10 @@
 							<img src="img/user.svg">
 						</div>
 						<div class="input">
-							<input placeholder="Password" type="password" required>
-							<img src="img/pass.svg">
+							<input type="password" id="psw "  placeholder="Enter Password" name="psw"
+          
+							pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+														<img src="img/pass.svg">
 						</div>
 					</div>
 					<button>Register</button>
